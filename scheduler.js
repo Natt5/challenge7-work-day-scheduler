@@ -1,8 +1,12 @@
 // The app's feat:
 
 // * Display the current day at the top of the calender when a user opens the planner.
+//   * Using a date utility library Day.js to work with date and time
+
+$('#currentDay').text(dayjs().format('dddd, MMMM D'));
 
 // * Present timeblocks for standard business hours when the user scrolls down.
+
 
 // * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
@@ -15,5 +19,3 @@
 
 
 
-
-//   * Uses a date utility library to work with date and time
