@@ -39,6 +39,8 @@ This application is deployed at a live URL and is accessible for public use.
 
 [Link to the deployed Work Day Scheduler Application](linkhere)
 
+![Screenshot of the Work Day Scheduler Application](./assets/Challenge7screenshot.png)
+
 ### GitHub Repository
 
 The code and documentation are available on GitHub, adhering to best practices in coding and documentation.
