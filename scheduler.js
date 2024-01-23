@@ -59,5 +59,20 @@ $(document).on('click', '.saveBtn', function(){
     localStorage.setItem(hour, event);
 });
 
+// loading events from the local storage
 
+// function loadEvents() {
+//     for (let hour = 8; hour<=23; hour++) {
+//         $(`#${hour}`).find('textarea').val(localStorage.getItem(hour));
+//     }
+// }
 
+function loadEvents() {
+    $('.time-block').each(function() {
+        const id = $(this).attr('id');
+        const event = localStorage.getItem(id);
+        if (event) {
+            $(this).find('.description').val(event);
+        }
+    });
+}
