@@ -31,7 +31,7 @@ function createTimeBlocks() {
 // Formatting the hour for display
 function formatHour(hour) {
     return dayjs().hour(hour).minute(0).format('HH: mm');
-  }
+}
 
 // * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
@@ -66,12 +66,6 @@ $(document).on('click', '.saveBtn', function(){
 });
 
 // loading events from the local storage
-
-// function loadEvents() {
-//     for (let hour = 8; hour<=23; hour++) {
-//         $(`#${hour}`).find('textarea').val(localStorage.getItem(hour));
-//     }
-// }
 
 function loadEvents() {
     $('.time-block').each(function() {
