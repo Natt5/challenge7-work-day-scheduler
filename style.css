@@ -6,19 +6,21 @@ body {
 
 textarea {
   background: transparent;
-  border: none;
+  /* border: none; starter pack */
+  border: 1px dashed #000000; /* custom*/
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   padding: 10px;
 }
 
 header {
   text-align: center;
   background-color: transparent;
-  color: black;
+  /* color: black; */
+  color: rgb(119, 119, 119);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #d3d3d3;
   padding: 60px;
 }
 
@@ -49,24 +51,30 @@ header {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #fb6712;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #ffbe98;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  /* border-left: 1px dashed #000000; starter pack*/
+  border-left: none;
+  border-right: 1px dashed #000000;
+  border-top: 1px dashed #000000;
+  border-bottom: 1px dashed #000000;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #ffbe98;
   color: white;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transition for transform and background color */
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; starter pack*/
+  transform: scale(1.5); /* Enlarge button slightly on hover custom*/
 }

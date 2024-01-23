@@ -5,8 +5,6 @@
 
 $('#currentDay').text(dayjs().format('dddd, MMMM D'));
 
-
-
 // * Present timeblocks for standard business hours when the user scrolls down.
 
 function createTimeBlocks() {
