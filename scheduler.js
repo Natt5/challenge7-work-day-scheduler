@@ -5,7 +5,10 @@
 
 $('#currentDay').text(dayjs().format('dddd, MMMM D'));
 
+
+
 // * Present timeblocks for standard business hours when the user scrolls down.
+
 function createTimeBlocks() {
     const container = $('.container');
     for (let hour = 8; hour <=23; hour++) {
@@ -26,6 +29,11 @@ function createTimeBlocks() {
         container.append(timeBlock);
     }
 }
+
+// Formatting the hour for display
+function formatHour(hour) {
+    return dayjs().hour(hour).minute(0).format('HH: mm');
+  }
 
 // * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
