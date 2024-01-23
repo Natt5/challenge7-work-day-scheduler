@@ -37,7 +37,7 @@ Users can interact with the scheduler by clicking on the desired time block to a
 
 This application is deployed at a live URL and is accessible for public use.
 
-[Link to the deployed Work Day Scheduler Application](linkhere)
+[Link to the deployed Work Day Scheduler Application](https://natt5.github.io/challenge7-work-day-scheduler/)
 
 ![Screenshot of the Work Day Scheduler Application](./assets/Challenge7screenshot.png)
 
