@@ -1,1 +1,1 @@
-# Challenge7-Work-Day-Scheduler-js
+# Challenge7-Work-Day-Scheduler-Third-Party APIs-js
