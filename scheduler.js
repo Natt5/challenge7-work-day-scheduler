@@ -45,9 +45,19 @@ $('.time-block').click(function(){
 
 // * Save the event in local storage when the save button is clicked in that timeblock.
 
+$('.saveBtn').click(function(){
+    const hour = $(this).parent().attr('id');
+    const event = $(this).siblings('textarea').val();
+    localStorage.setItem(hour, event);
+});
 
 // * Persist events between refreshes of a page
 
+$(document).on('click', '.saveBtn', function(){
+    const hour = $(this).parent().attr('id');
+    const event = $(this).siblings('.description').val();
+    localStorage.setItem(hour, event);
+});
 
 
 
