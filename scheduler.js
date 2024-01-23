@@ -76,3 +76,8 @@ function loadEvents() {
         }
     });
 }
+
+$(document).ready(function(){
+    createTimeBlocks();
+    loadEvents();
+});
