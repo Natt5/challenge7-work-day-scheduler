@@ -6,7 +6,26 @@
 $('#currentDay').text(dayjs().format('dddd, MMMM D'));
 
 // * Present timeblocks for standard business hours when the user scrolls down.
+function createTimeBlocks() {
+    const container = $('.container');
+    for (let hour = 8; hour <=23; hour++) {
+        // Need to create time blocks
+        const timeClass = getTimeClass (hour);
+        const timeBlock = $ (`
+        <div id="hour-${hour}" class="row time-block ${timeClass}">
+        <div class="col-md-1 hour">
+        ${formatHour(hour)}
+        </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">
+        <i class="fas fa-save"></i>
+        </button>
+        </div>
+        `);
 
+        container.append(timeBlock);
+    }
+}
 
 // * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
