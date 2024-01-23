@@ -29,6 +29,14 @@ function createTimeBlocks() {
 
 // * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
+// Checking the hour status/past/present/future
+
+function getTimeClass (hour){
+    const currentHour = dayjs().hour();
+    if (hour <currentHour) return 'past';
+    if (hour === currentHour) return 'present';
+    return 'future';
+}
 // * Allow a user to enter an event when they click a timeblock
 
 // * Save the event in local storage when the save button is clicked in that timeblock.
