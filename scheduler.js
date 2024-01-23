@@ -39,7 +39,12 @@ function getTimeClass (hour){
 }
 // * Allow a user to enter an event when they click a timeblock
 
+$('.time-block').click(function(){
+    $(this).find('textarea').focus();
+});
+
 // * Save the event in local storage when the save button is clicked in that timeblock.
+
 
 // * Persist events between refreshes of a page
 
